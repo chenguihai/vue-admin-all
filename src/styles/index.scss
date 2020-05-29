@@ -1,0 +1,276 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+// @import './store.scss';
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+div:focus {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+}
+
+.clearfix {
+    &:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+    }
+}
+
+.fr {
+    float: right;
+}
+
+.mr_10 {
+    margin-right: 10px;
+}
+
+//main-container全局样式
+.app-main {
+    //min-height: 100%
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+}
+
+.app-container {
+    padding: 20px;
+}
+
+//搜索栏样式
+.operate-container {
+    margin-top: 20px;
+}
+
+.operate-container .btn-add {
+    float: right;
+}
+
+//表格栏样式
+.table-container {
+    margin-top: 20px;
+}
+
+//批量操作栏样式
+.batch-operate-container {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+//分页栏样式
+.pagination-container {
+    // float: right;
+    text-align: right;
+    margin-top: 20px;
+}
+
+//添加、更新表单样式
+.form-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 720px;
+    padding: 35px 35px 15px 35px;
+    margin: 20px auto;
+}
+
+//主标题
+.font-extra-large {
+    font-size: 20px;
+    color: #303133;
+}
+
+//标题
+.font-title-large {
+    font-size: 18px;
+    color: #303133;
+}
+
+//小标题
+.font-title-medium {
+    font-size: 16px;
+    color: #303133;
+}
+
+//正文
+.font-medium {
+    font-size: 16px;
+    color: #606266;
+}
+
+//正文
+.font-small {
+    font-size: 14px;
+    color: #606266;
+}
+
+//正文（小）
+.font-extra-small {
+    font-size: 13px;
+    color: #606266;
+}
+
+.color-main {
+    color: #409EFF;
+}
+
+.color-success {
+    color: #67C23A;
+}
+
+.color-warning {
+    color: #E6A23C;
+}
+
+.color-danger {
+    color: #F56C6C;
+}
+
+.color-info {
+    color: #909399;
+}
+
+.mb_10 {
+    margin-bottom: 10px;
+}
+
+.mb_20 {
+    margin-bottom: 20px;
+}
+
+.headerForm {
+    .w_90 {
+        width: 90px;
+    }
+    .w_100 {
+        width: 100px;
+    }
+    .w_110 {
+        width: 110px;
+    }
+    .w_120 {
+        width: 120px;
+    }
+    .w_140 {
+        width: 140px;
+    }
+    .w_150 {
+        width: 150px;
+    }
+    .w_160 {
+        width: 160px;
+    }
+    .w_200 {
+        width: 200px;
+    }
+    .w_260 {
+        width: 260px;
+    }
+    .w_max {
+        width: 100%;
+    }
+    .status {
+        width: 130px;
+    }
+}
+
+.accountBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #99a9bf;
+    height: 120px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    .number {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .type {
+        font-size: 18px;
+    }
+}
+
+//证件样式
+.annex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+        padding: 0 5px;
+    }
+}
+
+.imgCover {
+    display: block;
+    width: 100px;
+    //height: 60px;
+}
+
+.thumbnail_box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    .box_left {
+        width: 100px;
+        .left_img {
+            height: 60px;
+            width: 100%;
+        }
+    }
+    .box_right {
+        flex: 1;
+        margin-left: 10px;
+        h1 {
+            font-size: 14px;
+            margin: 0;
+            text-align: left;
+        }
+        p {
+            text-align: left;
+        }
+    }
+}

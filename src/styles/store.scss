@@ -1,0 +1,135 @@
+.app-container {
+    .el-main {
+        padding: 0;
+        .el-row {
+            .grid-content {
+                background: #cccccc;
+                line-height: 40px;
+                text-indent: 10px;
+            }
+            .shop-content {
+                background: #f2f2f2;
+                .el-form {
+                    padding: 10px 0;
+                    .el-form-item {
+                        margin-bottom: 0;
+                        padding: 3px 0;
+                    }
+                    .div_bottom {
+                        padding: 20px 0 20px 98px;
+                    }
+                }
+            }
+            //媒介资质
+            .mediumall {
+                padding-bottom: 35px;
+                background: #f2f2f2;
+                overflow: auto;
+                padding: 15px 0;
+                .mediumall_child {
+                    margin-left: 20px;
+                    margin-right: 30px;
+                    border-bottom: 1px solid #d7d7d7;
+                    .el-form {
+                        .div_bottom {
+                            margin-left: 40px;
+                            padding-bottom: 10px;
+                        }
+                        ul {
+                            list-style: none;
+                            float: left;
+                            width: 550px;
+                            padding: 0;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            li {
+                                float: left;
+                                width: 180px;
+                                padding: 4px;
+                            }
+                        }
+                    }
+                }
+                .mediumall_child:last-child {
+                    border-bottom: 0;
+                }
+            }
+            //工作经历
+            .jop-content {
+                display: flex;
+                flex-wrap: wrap;
+                background: #f2f2f2;
+                overflow: auto;
+                .jop_child {
+                    padding-top: 15px;
+                    width: 49%;
+                    box-sizing: border-box;
+                    border-bottom: 1px solid #797979;
+                }
+                .jop_child:nth-child(2n+1) {
+                    border-right: 1px solid #797979;
+                }
+                .jop_child:nth-child(2n) {
+                    .el-form {
+                        padding-left: 20px;
+                    }
+                }
+            }
+            //银行卡管理css
+            .header {
+                background: #cccccc;
+                line-height: 40px;
+                text-indent: 10px;
+            }
+            .bankall {
+                padding-bottom: 30px;
+                background: #f2f2f2;
+                .el-table {
+                    background: #f2f2f2;
+                }
+            }
+            //实名认证css
+            .user-person {
+                position: relative;
+                background: #f2f2f2;
+                padding: 15px 0;
+                &>p,
+                &>div {
+                    margin: 0;
+                    font-size: 14px;
+                    line-height: 30px;
+                    span {
+                        display: inline-block;
+                        width: 130px;
+                        text-align: right;
+                    }
+                    .span-item {
+                        text-align: left;
+                    }
+                    .text {
+                        font-style: normal;
+                    }
+                }
+                .p_one {
+                    overflow: auto;
+                    span {
+                        float: left;
+                    }
+                    ul {
+                        list-style: none;
+                        float: left;
+                        width: 550px;
+                        padding: 0;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        li {
+                            float: left;
+                            width: 108px;
+                            padding: 4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
